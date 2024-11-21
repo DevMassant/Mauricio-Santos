@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Novo Portfolio</title>
+     <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+     <section>
+         <div class="container">
+                <nav>
+                    <a href="#" class="logo">Maurício Santos</a>
+                    <ul>
+                        <li><a href="#" onclick="showSection('home')">Inicio</a></li>
+                        <li><a href="#" onclick="showSection('about')">Sobre</a></li>
+                        <li><a href="#" onclick="showSection('projects')">Projetos</a></li>
+                        <li><a href="#" onclick="showSection('contact')">Contatos</a></li>
+                    </ul>
+                </nav>
+             <div class="content">
+                 <div id="home" class="content-section active-section">
+                     <h2>Olá! Eu sou o Maurício!</h2>
+                     <p>Seja bem-vindo ao meu Portfólio</p>
+                 </div>
+                 <div id="about" class="content-section">
+                     <h2>Sobre Mim</h2>
+                     <p>Tenho 24 anos <br> Cursando atualmente Análise e Desenvolvimento de Sistemas pela UNINTER. <br> Apaixonado por tecnologia e programação. Meu objetivo é me tornar um grande desenvolvedor, criando soluções inovadoras que impactem positivamente a vida das pessoas. Estou sempre em busca de novos desafios e aprendizados para aprimorar minhas habilidades na área.</p>
+                 </div>
+                 <div id="projects" class="content-section">
+                     <h2>Projetos</h2>
+                     <div class="projects-grid">
+                         <div class="project-card">
+                             <img src="imagens/CardDeProduto.jpg" alt="Card de Produto">
+                             <h3>Card de Produto</h3>
+                             <p>Um card de apresentação de produto de forma simples e eficaz.</p>
+                             <a href="https://devmassant.github.io/CardProduto/" target="_blank">Ver Projeto</a>
+                         </div>
+                         <div class="project-card">
+                             <img src="imagens/portfólio.jpg" alt="Portfólio">
+                             <h3>Portfólio Simples</h3>
+                             <p>Um portfólio simples, com algumas informações como sobre, formação, projetos e formulário para contato</p>
+                             <a href="https://devmassant.github.io/Portfolio-Mauricio-Santos/" target="_blank">Ver Projeto</a>
+                         </div>
+                     </div>
+                 </div>
+                 <div id="contact" class="content-section">
+                     <h2>Contatos</h2>
+                     <p>Você pode me encontrar através das minhas redes sociais</p>
+                    <ul class="icon">
+                        <li><a href="https://www.instagram.com/massanti_/" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/massantii" target="_blank"><img src="imagens/linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/DevMassant" target="_blank"><img src="imagens/github.png" alt="GitHub"></a></li>
+                    </ul>
+                 </div>
+             </div>
+             <div class="imgBox">
+                 <img src="imagens/minha-foto.jfif" alt="minha foto">
+         </div>
+     </section>
+     <footer>
+         <p>Maurício Santos. 2024 &copy;  Todos os direitos reservados.</p>
+     </footer>
+     <script>
+        function showSection(section) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(sec => sec.classList.remove('active-section'));
+            document.getElementById(section).classList.add('active-section');
+        }
+    </script>
+ </body>
+ </html>
